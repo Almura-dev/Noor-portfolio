@@ -1,0 +1,75 @@
+.About_Conatiner {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+.About_Content {
+  width: 75%;
+  gap: 1rem;
+}
+.About_text {
+  padding: 2rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-justify: inter-ideograph;
+}
+.text {
+  font-size: 1.2rem;
+  text-justify: auto;
+  text-align: right;
+  color: #c7884b;
+}
+.text:last-child {
+  color: var(--color-primary);
+}
+.quran {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-family: "Arabic";
+}
+@media screen and (max-width: 1024px) {
+  .About_Conatiner {
+    padding: 2rem;
+  }
+  .About_Content {
+    width: 85%;
+    gap: 1rem;
+  }
+  .About_text {
+    padding: 2rem;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .quran {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .About_Conatiner {
+    padding: 1rem;
+  }
+  .About_Content {
+    width: 95%;
+    gap: 1rem;
+  }
+  .About_text {
+    padding: 2rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .quran {
+    font-size: 1.8rem;
+  }
+}

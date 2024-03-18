@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Sirwan6";
+  src: local("Sirwan6"),
+    url("../src/assets/fonts/sirwan6.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "rudawbold";
+  src: local("rudawbold"),
+    url("../src/assets/fonts/rudawbold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Quran1";
+  src: local("Quran1"), url("../src/assets/fonts/Quran1.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Arabic";
+  src: local("Arabic"), url("../src/assets/fonts/Arabic.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Hafs";
+  src: local("Hafs"), url("../src/assets/fonts/Hafs.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  direction: rtl;
+  transition: all 0.5s ease;
+  font-family: "rudawbold";
+  font-weight: 900;
+}
+
+:root {
+  --color-bg: #f1dbf5;
+  --color-bg-variant: #f1dbf5;
+  --color-primary: #5c3063;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+  --swiper-theme-color: white !important;
+}
+
+body {
+  background-color: white;
+  scroll-snap-type: y mandatory;
+  background-image: url('https://i.ibb.co/dg4NRY7/texture.png');
+  background-size: cover;
+
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* Define the snap points for each section */
+.section {
+  scroll-snap-align: start;
+}
+/* width */
+/* Track */
+::-webkit-scrollbar {
+  width: 1rem; /* Width of the entire scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #c7884b; /* Color of the scrollbar handle */
+  border-radius: 1rem; /* Roundness of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a26e39; /* Color of the scrollbar handle on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Handle on the track */
+::-webkit-scrollbar-track-piece {
+  background: #e0e0e0; /* Color of the scrollbar handle when it's on the track */
+}
+
+
+.br {
+  border: 1px solid red;
+}
+a {
+  color: white; /* Unvisited link */
+}
+
+a:visited {
+  color: white; /* Visited link */
+}
+
+a:hover {
+  color: white; /* Mouse over link */
+}
+
+a:active {
+  color: white; /* Selected link */
+}
+.App {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+.flex_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+    @media screen and (max-width: 1500px) {
+     
+    }
+    @media screen and (max-width: 1300px) {
+     
+    }
+    @media screen and (max-width: 1200px) {
+      
+    }
+    
+    @media screen and (max-width: 1000px) {
+      
+    }
+    
+    @media screen and (max-width: 768px) {
+      
+    }
+    
+    @media screen and (max-width: 576px) {
+      
+    } */

@@ -1,0 +1,122 @@
+.Products_Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Products_Content {
+  width: 75%;
+  height: 100%;
+}
+.Products {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  gap: 4rem;
+  padding: 4rem;
+}
+.Product {
+  width: 15rem;
+  height: 15rem;
+  box-shadow: 0 0 5px black;
+  border-radius: 1rem;
+}
+.Product:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.Product img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem black;
+}
+@media screen and (max-width: 1240px) {
+  .Products_Content {
+    width: 75%;
+    height: 100%;
+  }
+  .Products {
+    gap: 3rem;
+    padding: 4rem;
+  }
+  .Product {
+    width: 12rem;
+    height: 12rem;
+  }
+  
+  .Product img {
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0 0 0.5rem black;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Products_Content {
+    width: 85%;
+    height: 100%;
+  }
+  .Products {
+    gap: 3rem;
+    padding: 4rem;
+  }
+  .Product {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  .Product img {
+    width: 8rem;
+    height: 8rem;
+    box-shadow: 0 0 0.5rem black;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Products_Content {
+    width: 95%;
+    height: 100%;
+  }
+  .Products {
+    gap: 2rem;
+    padding: 3rem;
+  }
+  .Product {
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  .Product img {
+    width: 6rem;
+    height: 6rem;
+    box-shadow: 0 0 0.5rem black;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Products_Content {
+    width: 95%;
+    height: 35vh;
+  }
+  .Products {
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .Product {
+    width: 4rem;
+    height: 4rem;
+  }
+  .Product img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem black;
+  }
+}

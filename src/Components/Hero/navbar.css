@@ -1,0 +1,278 @@
+.Navbar_Container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+}
+
+.Navbar_Container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12.5%; /* Adjust the left position to center the border at 75% */
+  width: 75%; /* Adjust the length of the border */
+  height: 1px;
+  background-color: white;
+}
+
+.Navbar_content {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Logo img {
+  width: 5rem;
+  padding: 0.5rem;
+}
+.Navigations {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  gap: 3rem;
+}
+.Navigations :hover {
+  color: #c7884b !important;
+  transition: var(--transition);
+}
+.Download {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+.download_button_navbar {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+  color: var(--color-primary) !important;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.download_button_navbar:hover {
+  background-color: #c7884b;
+  color: white !important;
+  transition: var(--transition);
+}
+
+/* ////////// Responsive //////// */
+/* ////////// Responsive //////// */
+/* ////////// Responsive //////// */
+/* ////////// Responsive //////// */
+
+@media screen and (max-width: 1440px) {
+  .Navbar_Container {
+    padding: 1rem;
+  }
+  .Navbar_Container::before {
+    left: 7.5%; 
+    width: 85%;
+  }
+
+  .Navbar_content {
+    width: 85%;
+  }
+
+  .Logo img {
+    width: 4rem;
+    padding: 0.5rem;
+  }
+  .Navigations {
+    font-size: 1rem;
+    gap: 2rem;
+  }
+  .Download {
+    height: 4rem;
+  }
+  .download_button_navbar {
+    width: 10rem;
+    height: 65%;
+    border-radius: 1rem;
+    font-size: 1rem;
+  }
+} 
+
+@media screen and (max-width: 1240px) {
+  .Navbar_Container {
+    padding: 0.5rem;
+  }
+  .Navbar_Container::before {
+    left: 7.5%; 
+    width: 85%;
+  }
+
+  .Navbar_content {
+    width: 85%;
+  }
+
+  .Logo img {
+    width: 4rem;
+    padding: 0.5rem;
+  }
+  .Navigations {
+    font-size: 1rem;
+    gap: 2rem;
+  }
+  .Download {
+    height: 4rem;
+  }
+  .download_button_navbar {
+    width: 10rem;
+    height: 65%;
+    border-radius: 1rem;
+    font-size: 1rem;
+  }
+} 
+@media screen and (max-width: 1024px) {
+  .Navbar_Container {
+    padding: 0.5rem;
+  }
+  .Navbar_Container::before {
+    left: 7.5%; 
+    width: 85%;
+  }
+
+  .Navbar_content {
+    width: 85%;
+  }
+
+  .Logo img {
+    width: 4rem;
+    padding: 0.5rem;
+  }
+  .Navigations {
+    font-size: 0.9rem;
+    gap: 1.5rem;
+  }
+  .Download {
+    height: 4rem;
+  }
+  .download_button_navbar {
+    width: 8rem;
+    height: 65%;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+  }
+} 
+@media screen and (max-width: 768px) {
+  .Navbar_Container {
+    padding: 0.5rem;
+  }
+  .Navbar_Container::before {
+    left: 7.5%; 
+    width: 85%;
+  }
+
+  .Navbar_content {
+    width: 85%;
+  }
+
+  .Logo img {
+    width: 4rem;
+    padding: 0.5rem;
+  }
+  .Navigations {
+    font-size: 0.7rem;
+    gap: 1.5rem;
+  }
+  .Download {
+    height: 3.5rem;
+  }
+  .download_button_navbar {
+    width: 8rem;
+    height: 65%;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+  }
+} 
+@media screen and (max-width: 425px) {
+  .Navbar_Container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    position: sticky;
+  }
+  
+  .Navbar_Container::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2.5%; /* Adjust the left position to center the border at 75% */
+    width: 95%; /* Adjust the length of the border */
+    height: 1px;
+    background-color: white;
+  }
+  
+  .Navbar_content {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Logo {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Logo img {
+    width: 4rem;
+    padding: 0.5rem;
+  }
+  .Navigations {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 3rem;
+    color: white;
+  }
+  .Navigations :hover {
+    color: #c7884b !important;
+    transition: var(--transition);
+  }
+  .Download {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+  }
+  .download_button_navbar {
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    color: var(--color-primary) !important;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+  }
+  .download_button_navbar:hover {
+    background-color: #c7884b;
+    color: white !important;
+    transition: var(--transition);
+  }
+} 

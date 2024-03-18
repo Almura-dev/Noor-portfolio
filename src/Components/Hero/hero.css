@@ -1,0 +1,457 @@
+.Hero_Container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-primary);
+  background-image: url("https://i.ibb.co/dg4NRY7/texture.png");
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 1rem; */
+}
+.Hero_Content {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Hero_right,
+.Hero_left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Hero_right {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Hero_left {
+  align-items: flex-end;
+}
+.Hero_left img {
+  width: 18rem;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.897));
+  animation: shakeLeftRight 5s ease-in-out infinite; /* Change duration to 5s */
+  animation-delay: 2s; /* Add delay of 5s for the initial animation */
+}
+
+@keyframes shakeLeftRight {
+  0%,
+  100% {
+    transform: Rotate(0);
+  }
+
+  25%,
+  75% {
+    transform: Rotate(1deg); /* Adjust the distance as needed */
+  }
+
+  50% {
+    transform: Rotate(-1deg); /* Adjust the distance as needed */
+  }
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(1rem);
+  }
+}
+
+.Hero_title {
+  font-size: 2rem;
+  color: #c7884b;
+}
+.Hero_title span:nth-child(3) {
+  color: white;
+}
+.Hero_Quran {
+  font-family: "Hafs";
+  font-size: 1.5rem;
+  color: #e4b884;
+}
+.Download_Hero {
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download_button_hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 65%;
+  background-color: white;
+  color: var(--color-primary) !important;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+.download_button_hero:hover {
+  background-color: #c7884b;
+  color: white !important;
+  transition: var(--transition);
+}
+.explore {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  font-size: 3.5rem;
+  color: #c7884b;
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+@media screen and (max-width: 1440px) {
+  .Hero_Container {
+    height: 100vh;
+    border-radius: 0 0 0 90%;
+    padding-top: 1rem;
+  }
+  .Hero_Content {
+    width: 75%;
+  }
+  .Hero_right {
+    gap: 1rem;
+  }
+  .Hero_left {
+    align-items: flex-end;
+  }
+  .Hero_left img {
+    width: 18rem;
+  }
+  .Hero_title {
+    font-size: 2rem;
+  }
+  .Hero_Quran {
+    font-size: 1.5rem;
+  }
+  .Download_Hero {
+    width: 10rem;
+    height: 4rem;
+  }
+  .download_button_hero {
+    width: 10rem;
+    height: 65%;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+  }
+ 
+  .explore {
+    z-index: 10;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .Hero_Container {
+    height: 100vh;
+    border-radius: 0 0 0 90%;
+    padding-top: 1rem;
+  }
+  .Hero_Content {
+    width: 75%;
+  }
+  .Hero_right {
+    gap: 1rem;
+  }
+  .Hero_left {
+    align-items: flex-end;
+  }
+  .Hero_left img {
+    width: 15rem;
+  }
+  .Hero_title {
+    font-size: 2rem;
+  }
+  .Hero_Quran {
+    font-size: 1.5rem;
+  }
+  .Download_Hero {
+    width: 10rem;
+    height: 4rem;
+  }
+  .download_button_hero {
+    width: 10rem;
+    height: 65%;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+  }
+ 
+  .explore {
+    z-index: 10;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Hero_Container {
+    height: 100vh;
+    border-radius: 0 0 0 90%;
+    padding-top: 1rem;
+  }
+  .Hero_Content {
+    width: 85%;
+
+  }
+  .Hero_right {
+    gap: 1rem;
+  }
+  .Hero_left {
+    align-items: flex-end;
+  }
+  .Hero_left img {
+    width: 15rem;
+  }
+  .Hero_title {
+    font-size: 2rem;
+  }
+  .Hero_Quran {
+    font-size: 1.5rem;
+  }
+  .Download_Hero {
+    width: 8rem;
+    height: 4rem;
+  }
+  .download_button_hero {
+    width: 10rem;
+    height: 65%;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+  }
+ 
+  .explore {
+    z-index: 10;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Hero_Container {
+    height: auto;
+    border-radius: 0 0 0 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .Hero_Content {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Hero_right,
+  .Hero_left {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .Hero_right {
+    flex: 1;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .Hero_left {
+    flex: 2;
+
+    align-items: flex-start;
+  }
+  .Hero_left img {
+    width: 15rem;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.897));
+    animation: shakeLeftRight 5s ease-in-out infinite; /* Change duration to 5s */
+    animation-delay: 2s; /* Add delay of 5s for the initial animation */
+  }
+  
+  @keyframes shakeLeftRight {
+    0%,
+    100% {
+      transform: Rotate(0);
+    }
+  
+    25%,
+    75% {
+      transform: Rotate(1deg); /* Adjust the distance as needed */
+    }
+  
+    50% {
+      transform: Rotate(-1deg); /* Adjust the distance as needed */
+    }
+  }
+  
+  @keyframes moveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(1rem);
+    }
+  }
+  
+  .Hero_title {
+    font-size: 2rem;
+    color: #c7884b;
+  }
+  .Hero_title span:nth-child(3) {
+    color: white;
+  }
+  .Hero_Quran {
+    font-family: "Hafs";
+    font-size: 1.5rem;
+    color: #e4b884;
+  }
+  .Download_Hero {
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .download_button_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 65%;
+    background-color: white;
+    color: var(--color-primary) !important;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .download_button_hero:hover {
+    background-color: #c7884b;
+    color: white !important;
+    transition: var(--transition);
+  }
+  .explore {
+    display: none;
+  } 
+}
+@media screen and (max-width: 425px) {
+  .Hero_Container {
+    height: auto;
+    border-radius: 0 0 0 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .Hero_Content {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Hero_right,
+  .Hero_left {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .Hero_right {
+    flex: 1;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .Hero_left {
+    flex: 2;
+
+    align-items: flex-start;
+  }
+  .Hero_left img {
+    width: 15rem;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.897));
+    animation: shakeLeftRight 5s ease-in-out infinite; /* Change duration to 5s */
+    animation-delay: 2s; /* Add delay of 5s for the initial animation */
+  }
+  
+  @keyframes shakeLeftRight {
+    0%,
+    100% {
+      transform: Rotate(0);
+    }
+  
+    25%,
+    75% {
+      transform: Rotate(1deg); /* Adjust the distance as needed */
+    }
+  
+    50% {
+      transform: Rotate(-1deg); /* Adjust the distance as needed */
+    }
+  }
+  
+  @keyframes moveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(1rem);
+    }
+  }
+  
+  .Hero_title {
+    font-size: 2rem;
+    color: #c7884b;
+  }
+  .Hero_title span:nth-child(3) {
+    color: white;
+  }
+  .Hero_Quran {
+    font-family: "Hafs";
+    font-size: 1.5rem;
+    color: #e4b884;
+  }
+  .Download_Hero {
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .download_button_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 65%;
+    background-color: white;
+    color: var(--color-primary) !important;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .download_button_hero:hover {
+    background-color: #c7884b;
+    color: white !important;
+    transition: var(--transition);
+  }
+  .explore {
+    display: none;
+  }
+}

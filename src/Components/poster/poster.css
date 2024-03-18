@@ -1,0 +1,28 @@
+.Poster_Container {
+  width: 100%;
+  height: 65vh;
+  background-image: url("https://i.ibb.co/9V5Qd2w/362249504-717917803679297-6189158730922428313-n.jpg");
+  background-size: cover;
+  background-position: center center; /* Adjusted the vertical position */
+}
+
+@media screen and (max-width: 1240px) {
+  .Poster_Container {
+    height: 55vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Poster_Container {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Poster_Container {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .Poster_Container {
+    height: 20vh;
+  }
+}
