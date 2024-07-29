@@ -107,7 +107,7 @@ export const Hero = (props) => {
         </>
       ) : (
         <>
-        {/* <Nav activeNav={props.activeNav} setActiveNav={props.setActiveNav}/> */}
+        <Nav activeNav={props.activeNav} setActiveNav={props.setActiveNav}/>
         {/* <div className="Navbar_Container">
           <div className="Navbar_content">
             <div className="Navigations">
